@@ -1,0 +1,43 @@
+{
+  "description": "Synthetic 10-expense / 12-bank-txn dataset with known ground-truth matches",
+  "expenses": [
+    {"id": "exp-01", "date": "2026-06-04", "item": "Swiggy Order",    "category": "Food & Dining",   "cost": 450},
+    {"id": "exp-02", "date": "2026-06-04", "item": "PhonePe Recharge","category": "Utilities & Bills","cost": 200},
+    {"id": "exp-03", "date": "2026-06-05", "item": "Amazon Purchase",  "category": "Shopping",        "cost": 1299},
+    {"id": "exp-04", "date": "2026-06-06", "item": "Zomato Dinner",   "category": "Food & Dining",   "cost": 320},
+    {"id": "exp-05", "date": "2026-06-07", "item": "Grocery Run",     "category": "Groceries",       "cost": 850},
+    {"id": "exp-06", "date": "2026-06-08", "item": "Netflix",         "category": "Subscriptions",   "cost": 649},
+    {"id": "exp-07", "date": "2026-06-09", "item": "Auto Fare",       "category": "Transport",       "cost": 75},
+    {"id": "exp-08", "date": "2026-06-10", "item": "Rent",            "category": "Rent & Home",     "cost": 15000},
+    {"id": "exp-09", "date": "2026-06-06", "item": "Tea & Snacks",    "category": "Food & Dining",   "cost": 80,  "_note": "cash — no bank txn"},
+    {"id": "exp-10", "date": "2026-06-09", "item": "Auto Fare",       "category": "Transport",       "cost": 60,  "_note": "cash — no bank txn"}
+  ],
+  "bank_transactions": [
+    {"id": "txn-01", "txn_date": "2026-06-04", "description": "UPI-SWIGGY-9283471234@ybl-SWIGGY INDIA-AXIS",      "amount": 450,   "is_debit": true},
+    {"id": "txn-02", "txn_date": "2026-06-04", "description": "UPI-PHONEPE-8873612983@ybl-PHONEPE-ICICI",          "amount": 200,   "is_debit": true},
+    {"id": "txn-03", "txn_date": "2026-06-05", "description": "POS 412345XXXXXX1234 AMAZON",                       "amount": 1299,  "is_debit": true},
+    {"id": "txn-04", "txn_date": "2026-06-06", "description": "UPI-ZOMATO-7712839461@paytm-ZOMATO LTD-ICICI",     "amount": 320,   "is_debit": true},
+    {"id": "txn-05", "txn_date": "2026-06-07", "description": "UPI-BIGBASKET-4421839102@icici-BIGBASKET-ICICI",    "amount": 852,   "is_debit": true,  "_note": "₹2 rounding diff"},
+    {"id": "txn-06", "txn_date": "2026-06-08", "description": "UPI-NETFLIX-8812934000@ybl-NETFLIX-HDFC",           "amount": 649,   "is_debit": true},
+    {"id": "txn-07", "txn_date": "2026-06-09", "description": "UPI-RAPIDO-8812934712@ybl-RAPIDO-AXIS",             "amount": 75,    "is_debit": true},
+    {"id": "txn-08", "txn_date": "2026-06-10", "description": "IMPS-238471928-RENT PAYMENT",                       "amount": 15000, "is_debit": true},
+    {"id": "txn-09", "txn_date": "2026-06-05", "description": "NEFT-HDFC0001234-SALARY CREDIT",                    "amount": 75000, "is_debit": false, "_note": "credit — skipped in recon"},
+    {"id": "txn-10", "txn_date": "2026-06-08", "description": "NACH-HDFC CREDCARD-003948712",                      "amount": 5000,  "is_debit": true,  "_note": "bank-only — user forgot to log"},
+    {"id": "txn-11", "txn_date": "2026-06-09", "description": "ATM WDL-HDFC ATM BANDRA",                           "amount": 2000,  "is_debit": true,  "_note": "bank-only — cash withdrawal"},
+    {"id": "txn-12", "txn_date": "2026-06-10", "description": "UPI-IRCTC-9912837461@irctc-IRCTC LTD-SBI",         "amount": 1245,  "is_debit": true,  "_note": "bank-only — user forgot to log"}
+  ],
+  "ground_truth": {
+    "matches": [
+      {"expense_id": "exp-01", "bank_txn_id": "txn-01", "tier": "exact"},
+      {"expense_id": "exp-02", "bank_txn_id": "txn-02", "tier": "exact"},
+      {"expense_id": "exp-03", "bank_txn_id": "txn-03", "tier": "exact"},
+      {"expense_id": "exp-04", "bank_txn_id": "txn-04", "tier": "exact"},
+      {"expense_id": "exp-05", "bank_txn_id": "txn-05", "tier": "fuzzy"},
+      {"expense_id": "exp-06", "bank_txn_id": "txn-06", "tier": "exact"},
+      {"expense_id": "exp-07", "bank_txn_id": "txn-07", "tier": "exact"},
+      {"expense_id": "exp-08", "bank_txn_id": "txn-08", "tier": "exact"}
+    ],
+    "ledger_only": ["exp-09", "exp-10"],
+    "bank_only": ["txn-10", "txn-11", "txn-12"]
+  }
+}

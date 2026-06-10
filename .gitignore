@@ -1,0 +1,27 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+
+# Alembic (keep versions, skip pycache inside)
+backend/alembic/__pycache__/
+
+# Misc
+*.log
+*.swp
