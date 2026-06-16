@@ -134,4 +134,10 @@ export const api = {
 
   insights: (month: string) =>
     req<{ month: string; insights: string; cached: boolean }>(`/dashboard/insights?month=${month}`),
+
+  chat: (question: string, history: { role: string; content: string }[]) =>
+    req<{ question: string; answer: string }>("/chat", {
+      method: "POST",
+      body: JSON.stringify({ question, history }),
+    }),
 };

@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from app.config import settings
-from app.routers import expenses, parse, statements, recon, dashboard, export
+from app.routers import expenses, parse, statements, recon, dashboard, export, chat
 
 app = FastAPI(title="Kharcha API")
 
@@ -32,6 +32,7 @@ app.include_router(statements.router, prefix="/api")
 app.include_router(recon.router, prefix="/api")
 app.include_router(dashboard.router, prefix="/api")
 app.include_router(export.router, prefix="/api")
+app.include_router(chat.router, prefix="/api")
 
 
 @app.get("/health")

@@ -5,6 +5,7 @@ import "./index.css";
 import Ledger from "./pages/Ledger";
 import Reconcile from "./pages/Reconcile";
 import Dashboard from "./pages/Dashboard";
+import Chat from "./pages/Chat";
 
 function Nav() {
   const cls = ({ isActive }: { isActive: boolean }) =>
@@ -14,6 +15,7 @@ function Nav() {
       <NavLink to="/" end className={cls}>Ledger</NavLink>
       <NavLink to="/reconcile" className={cls}>Reconcile</NavLink>
       <NavLink to="/dashboard" className={cls}>Dashboard</NavLink>
+      <NavLink to="/chat" className={cls}>Ask AI</NavLink>
     </nav>
   );
 }
@@ -28,6 +30,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/" element={<Ledger />} />
           <Route path="/reconcile" element={<Reconcile />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/chat" element={<Chat />} />
         </Routes>
       </div>
     </BrowserRouter>

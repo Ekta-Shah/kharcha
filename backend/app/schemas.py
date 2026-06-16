@@ -100,3 +100,18 @@ class MatchOut(BaseModel):
     confirmed: bool
 
     model_config = {"from_attributes": True}
+
+
+class ChatMessage(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str
+
+
+class ChatRequest(BaseModel):
+    question: str
+    history: list[ChatMessage] = []
+
+
+class ChatResponse(BaseModel):
+    question: str
+    answer: str

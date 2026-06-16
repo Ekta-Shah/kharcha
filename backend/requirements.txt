@@ -5,7 +5,8 @@ asyncpg==0.29.0
 alembic==1.13.3
 pydantic==2.9.2
 pydantic-settings==2.5.2
-anthropic==0.40.0
+google-genai==2.8.0
+openai==2.41.1
 openpyxl==3.1.5
 python-multipart==0.0.12
 pandas==2.2.3
