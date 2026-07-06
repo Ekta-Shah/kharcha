@@ -31,8 +31,8 @@ python evaluate.py --backend hf --model <your-hf-repo>
 
 | Model | Accuracy | p50 latency | Cost / 1k requests |
 |---|---:|---:|---:|
-| API zero-shot (scout 17B) | pending | pending | pending |
-| API few-shot (scout 17B) | pending | pending | pending |
+| API zero-shot (scout 17B) | 0.718 | 3144 ms | ~Rs. 4 (free tier: rate-limited) |
+| API few-shot (scout 17B) | 0.733 | 3117 ms | ~Rs. 15 (free tier: rate-limited) |
 | Qwen2.5-1.5B + LoRA (local) | pending | pending | Rs. 0 |
 
 Full plan and acceptance criteria: [PLAN.md](PLAN.md).

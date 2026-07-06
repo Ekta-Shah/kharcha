@@ -1,0 +1,241 @@
+{
+  "name": "groq_few",
+  "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "n": 195,
+  "accuracy": 0.7333333333333333,
+  "p50_latency_ms": 3117.109958999947,
+  "errors_by_category": {
+    "Education": [
+      {
+        "text": "Toppr app yearly subscription ₹499",
+        "predicted": "Subscriptions"
+      },
+      {
+        "text": "Library membership fees",
+        "predicted": "Subscriptions"
+      },
+      {
+        "text": "Language learning app subscription ₹499",
+        "predicted": "Subscriptions"
+      }
+    ],
+    "Entertainment": [
+      {
+        "text": "My daughter's dance classes ₹1800",
+        "predicted": "Education"
+      },
+      {
+        "text": "dinner at new restaurant in Hauz Khas",
+        "predicted": "Food & Dining"
+      },
+      {
+        "text": "dance class fees for 2 months",
+        "predicted": "Education"
+      },
+      {
+        "text": "Family picnic to nearby hill station ₹5000",
+        "predicted": "Travel"
+      }
+    ],
+    "Gifts & Family": [
+      {
+        "text": "PhonePe reward, used for Dad's coffee",
+        "predicted": "Food & Dining"
+      },
+      {
+        "text": "Maa ki medicine ₹800",
+        "predicted": "Health"
+      },
+      {
+        "text": "Dad's mobile recharge ₹200",
+        "predicted": "Utilities & Bills"
+      },
+      {
+        "text": "Sister's online course subscription ₹800",
+        "predicted": "Subscriptions"
+      },
+      {
+        "text": "Sasta grocery for mum from DMart",
+        "predicted": "Groceries"
+      },
+      {
+        "text": "Took for chai on family outing",
+        "predicted": "Food & Dining"
+      }
+    ],
+    "Health": [
+      {
+        "text": "Naye glasses ₹1200",
+        "predicted": "Personal Care"
+      }
+    ],
+    "Other": [
+      {
+        "text": "tips for delivery boy ₹50",
+        "predicted": "Food & Dining"
+      },
+      {
+        "text": "bhabi ke liye gift hamper",
+        "predicted": "Gifts & Family"
+      },
+      {
+        "text": "Toll tax on highway 105 rupay",
+        "predicted": "Transport"
+      },
+      {
+        "text": "Railway station locker charges",
+        "predicted": "Transport"
+      },
+      {
+        "text": "petrol pump 300 rupaye",
+        "predicted": "Transport"
+      },
+      {
+        "text": "society ke maintenance charges ₹2500",
+        "predicted": "Rent & Home"
+      },
+      {
+        "text": "random donation to mandir 51",
+        "predicted": "Gifts & Family"
+      },
+      {
+        "text": "sundar nursery plants ₹80",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "ghar ka electricity bill",
+        "predicted": "Utilities & Bills"
+      },
+      {
+        "text": "Dream11 team entry fee ₹100",
+        "predicted": "Entertainment"
+      },
+      {
+        "text": "mummy ke liye gift 500 rupaye",
+        "predicted": "Gifts & Family"
+      }
+    ],
+    "Personal Care": [
+      {
+        "text": "Bath salts from Dharamshala market",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "shaving kit from market ₹80",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "Visited doctor at Apollo Hospitals",
+        "predicted": "Health"
+      },
+      {
+        "text": "Parle-G biscuit pack from local kirana store",
+        "predicted": "Groceries"
+      }
+    ],
+    "Rent & Home": [
+      {
+        "text": "Maasi ke ghar ka rent 8000 rupees",
+        "predicted": "Gifts & Family"
+      },
+      {
+        "text": "Washing machine purchase ₹8000",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "Electricity bill payment ₹1200",
+        "predicted": "Utilities & Bills"
+      },
+      {
+        "text": "BookMyBajaj appliance purchase",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "Bajaj ke liye ₹4500 down payment",
+        "predicted": "Other"
+      }
+    ],
+    "Shopping": [
+      {
+        "text": "Local bakery ka fresh bread",
+        "predicted": "Food & Dining"
+      },
+      {
+        "text": "Market se veggies aur fruits",
+        "predicted": "Groceries"
+      },
+      {
+        "text": "Fresh fruits and vegetables",
+        "predicted": "Groceries"
+      },
+      {
+        "text": "online groceries from bigbasket.com",
+        "predicted": "Groceries"
+      },
+      {
+        "text": "Diwali sweets making",
+        "predicted": "Gifts & Family"
+      },
+      {
+        "text": "Rs 120 on books and stationery",
+        "predicted": "Education"
+      },
+      {
+        "text": "New specs from optometrist",
+        "predicted": "Health"
+      },
+      {
+        "text": "Cleaning supplies ₹80",
+        "predicted": "Other"
+      }
+    ],
+    "Subscriptions": [
+      {
+        "text": "HoiChow subs ₹499",
+        "predicted": "Food & Dining"
+      }
+    ],
+    "Transport": [
+      {
+        "text": "Amazon Flex delivery ₹120",
+        "predicted": "Other"
+      }
+    ],
+    "Travel": [
+      {
+        "text": "mumbai airport parking",
+        "predicted": "Transport"
+      },
+      {
+        "text": "Bangalore airport parking ₹50",
+        "predicted": "Transport"
+      },
+      {
+        "text": "mumbai local travel 120",
+        "predicted": "Transport"
+      },
+      {
+        "text": "Airport parking fees 200",
+        "predicted": "Transport"
+      },
+      {
+        "text": "Ola ride to Mumbai airport ₹200",
+        "predicted": "Transport"
+      },
+      {
+        "text": "Delhi cab fare ₹300",
+        "predicted": "Transport"
+      },
+      {
+        "text": "ola prime ₹150",
+        "predicted": "Subscriptions"
+      }
+    ],
+    "Utilities & Bills": [
+      {
+        "text": "TV ki kabhi kabhi service",
+        "predicted": "Other"
+      }
+    ]
+  }
+}
