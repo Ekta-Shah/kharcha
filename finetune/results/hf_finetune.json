@@ -1,0 +1,187 @@
+{
+  "name": "hf_finetune",
+  "model": "EktaShah-30/hinglish-expense-classifier-1.5b",
+  "n": 195,
+  "accuracy": 0.8051282051282052,
+  "p50_latency_ms": 213.25966698350385,
+  "errors_by_category": {
+    "Entertainment": [
+      {
+        "text": "My daughter's dance classes ₹1800",
+        "predicted": "Education"
+      },
+      {
+        "text": "dinner at new restaurant in Hauz Khas",
+        "predicted": "Food & Dining"
+      },
+      {
+        "text": "Family picnic to nearby hill station ₹5000",
+        "predicted": "Travel"
+      }
+    ],
+    "Food & Dining": [
+      {
+        "text": "Tea and snacks at railway station",
+        "predicted": "Travel"
+      },
+      {
+        "text": "Cold drink 30",
+        "predicted": "Shopping"
+      }
+    ],
+    "Gifts & Family": [
+      {
+        "text": "Pocket money for chhota ₹500",
+        "predicted": "Cash Withdrawal"
+      },
+      {
+        "text": "Rs 150 for ramu",
+        "predicted": "Personal Care"
+      },
+      {
+        "text": "Sasta grocery for mum from DMart",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "Sent cash to papa via Google Pay ₹1000",
+        "predicted": "Cash Withdrawal"
+      }
+    ],
+    "Groceries": [
+      {
+        "text": "Rs 300 - monthly grocery from D-Mart",
+        "predicted": "Shopping"
+      }
+    ],
+    "Health": [
+      {
+        "text": "Naye glasses ₹1200",
+        "predicted": "Shopping"
+      }
+    ],
+    "Other": [
+      {
+        "text": "tips for delivery boy ₹50",
+        "predicted": "Personal Care"
+      },
+      {
+        "text": "naukri ka 1000 bonus",
+        "predicted": "Education"
+      },
+      {
+        "text": "bhabi ke liye gift hamper",
+        "predicted": "Gifts & Family"
+      },
+      {
+        "text": "Toll tax on highway 105 rupay",
+        "predicted": "Transport"
+      },
+      {
+        "text": "Railway station locker charges",
+        "predicted": "Transport"
+      },
+      {
+        "text": "petrol pump 300 rupaye",
+        "predicted": "Transport"
+      },
+      {
+        "text": "society ke maintenance charges ₹2500",
+        "predicted": "Rent & Home"
+      },
+      {
+        "text": "sundar nursery plants ₹80",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "ghar ka electricity bill",
+        "predicted": "Rent & Home"
+      },
+      {
+        "text": "Dream11 team entry fee ₹100",
+        "predicted": "Entertainment"
+      },
+      {
+        "text": "mummy ke liye gift 500 rupaye",
+        "predicted": "Gifts & Family"
+      }
+    ],
+    "Personal Care": [
+      {
+        "text": "fair & lovely ₹250",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "Visited doctor at Apollo Hospitals",
+        "predicted": "Health"
+      },
+      {
+        "text": "Parle-G biscuit pack from local kirana store",
+        "predicted": "Groceries"
+      }
+    ],
+    "Rent & Home": [
+      {
+        "text": "Maid ka kharch ₹2,500 per month",
+        "predicted": "Personal Care"
+      },
+      {
+        "text": "Electricity bill payment ₹1200",
+        "predicted": "Utilities & Bills"
+      },
+      {
+        "text": "BookMyBajaj appliance purchase",
+        "predicted": "Shopping"
+      }
+    ],
+    "Shopping": [
+      {
+        "text": "Local bakery ka fresh bread",
+        "predicted": "Food & Dining"
+      },
+      {
+        "text": "Market se veggies aur fruits",
+        "predicted": "Groceries"
+      },
+      {
+        "text": "Fresh fruits and vegetables",
+        "predicted": "Groceries"
+      },
+      {
+        "text": "New specs from optometrist",
+        "predicted": "Health"
+      }
+    ],
+    "Subscriptions": [
+      {
+        "text": "Swiggy One ₹199",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "altbalaji ₹199",
+        "predicted": "Groceries"
+      }
+    ],
+    "Transport": [
+      {
+        "text": "Amazon Flex delivery ₹120",
+        "predicted": "Shopping"
+      }
+    ],
+    "Travel": [
+      {
+        "text": "Travel insurance on Policybazaar ₹800",
+        "predicted": "Shopping"
+      },
+      {
+        "text": "ola prime ₹150",
+        "predicted": "Transport"
+      }
+    ],
+    "Utilities & Bills": [
+      {
+        "text": "Mere gaon ka bijli bill 700",
+        "predicted": "Rent & Home"
+      }
+    ]
+  }
+}

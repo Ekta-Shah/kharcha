@@ -71,14 +71,15 @@ class HFModel:
 
     def predict(self, text: str) -> str:
         messages = [{"role": "user", "content": f'{INSTRUCTION}\n\nEntry: "{text}"'}]
-        inputs = self.tok.apply_chat_template(
-            messages, add_generation_prompt=True, return_tensors="pt"
+        encoded = self.tok.apply_chat_template(
+            messages, add_generation_prompt=True, return_tensors="pt", return_dict=True
         ).to(self.device)
         out = self.model.generate(
-            inputs, max_new_tokens=12, do_sample=False,
+            **encoded, max_new_tokens=12, do_sample=False,
             pad_token_id=self.tok.eos_token_id,
         )
-        return self.tok.decode(out[0][inputs.shape[1]:], skip_special_tokens=True)
+        prompt_len = encoded["input_ids"].shape[1]
+        return self.tok.decode(out[0][prompt_len:], skip_special_tokens=True)
 
 
 def main() -> None:

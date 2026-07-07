@@ -33,6 +33,6 @@ python evaluate.py --backend hf --model <your-hf-repo>
 |---|---:|---:|---:|
 | API zero-shot (scout 17B) | 0.718 | 3144 ms | ~Rs. 4 (free tier: rate-limited) |
 | API few-shot (scout 17B) | 0.733 | 3117 ms | ~Rs. 15 (free tier: rate-limited) |
-| Qwen2.5-1.5B + LoRA (local) | pending | pending | Rs. 0 |
+| Qwen2.5-1.5B + LoRA (local, M4 Mac) | **0.805** | **213 ms** | **Rs. 0** |
 
 Full plan and acceptance criteria: [PLAN.md](PLAN.md).
